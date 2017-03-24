@@ -71,11 +71,11 @@ Demo = {
   packer: function() {
     var size = Demo.el.size.val();
     if (size == 'automatic') {
-      return new GrowingPacker();
+      return new bin_packing.GrowingPacker();
     }
     else {
       var dims = size.split("x");
-      return new Packer(parseInt(dims[0]), parseInt(dims[1]));
+      return new bin_packing.Packer(parseInt(dims[0]), parseInt(dims[1]));
     }
   },
 

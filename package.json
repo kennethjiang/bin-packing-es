@@ -1,6 +1,6 @@
 {
   "name": "bin-packing-es",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The nice little tool bin-packing in ES2015 module packaging for better reusability",
   "author": "Kenneth Jiang <kenneth.jiang@gmail.com>",
   "license": "MIT",

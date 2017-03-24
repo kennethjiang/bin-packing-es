@@ -127,6 +127,7 @@ GrowingPacker.prototype = {
   },
 
   growDown: function(w, h) {
+    var node;
     this.root = {
       used: true,
       x: 0,

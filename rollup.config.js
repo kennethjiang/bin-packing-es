@@ -14,7 +14,7 @@ export default {
     {
       dest: pkg.main,
       format: 'umd',
-      moduleName: 'THREETK',
+      moduleName: 'bin_packing',
       sourceMap: 'inline'
     },
     {

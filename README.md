@@ -8,22 +8,17 @@ bin packing algorithm that is suitable for generating
  * You can play with the [demo here](http://codeincomplete.com/posts/2011/5/7/bin_packing/example/)
  * You can find a [description here](http://codeincomplete.com/posts/2011/5/7/bin_packing/)
 
-Demo
-====
+Install
+=========
 
-Clone this repository
-
-    git clone https://github.com/jakesgordon/bin-packing
-
-View the index.html file in your favorite browser for examples of algorithm in use with lots of configurable options.
+    npm i --save bin-packing-es
 
 Usage
 =====
 
 If you want to use this in your own javascript projects, you need something like this:
 
-    <script src='packer.growing.js'></script>
-    <script>
+      import { Packer } from 'bin-packing-es';
       var packer = new Packer(1000, 1000);   // or:  new GrowingPacker();
       var blocks = [
         { w: 100, h: 100 },
@@ -43,9 +38,18 @@ If you want to use this in your own javascript projects, you need something like
           DrawRectangle(block.fit.x, block.fit.y, block.w, block.h);
         }
       }
-    </script>
 
 See source code comments for more details.
+
+Demo
+====
+
+
+    git clone https://github.com/kennethjiang/bin-packing-es.git
+    cd bin-packing-es
+    npm install && npm run build
+
+View the examples/index.html file in your favorite browser for examples of algorithm in use with lots of configurable options.
 
 License
 =======
@@ -55,7 +59,7 @@ See [LICENSE](https://github.com/jakesgordon/bin-packing/blob/master/LICENSE) fi
 Contact
 =======
 
-If you have any ideas, feedback, requests or bug reports, you can reach me at
+Submit your issues or contact the original author or bin-packing
 [jake@codeincomplete.com](mailto:jake@codeincomplete.com), or via
-my website: [Code inComplete](http://codeincomplete.com/posts/2011/5/7/bin_packing/)
+website: [Code inComplete](http://codeincomplete.com/posts/2011/5/7/bin_packing/)
 
