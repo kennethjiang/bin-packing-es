@@ -1,0 +1,36 @@
+{
+  "name": "bin-packing-es",
+  "version": "0.0.1",
+  "description": "The nice little tool bin-packing in ES2015 module packaging for better reusability",
+  "author": "Kenneth Jiang <kenneth.jiang@gmail.com>",
+  "license": "MIT",
+  "main": "build/bin-packing.js",
+  "module": "build/bin-packing.module.js",
+  "jsnext:main": "build/bin-packing.module.js",
+  "scripts": {
+    "build": "rollup -c",
+    "clean": "rimraf build && mkdirp build"
+  },
+  "keywords": [
+    "bin-packing"
+  ],
+  "repository": "git@github.com:kennethjiang/bin-packing-es.git",
+  "files": [
+    "js",
+    "build"
+  ],
+  "dependencies": {
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "babel-plugin-external-helpers": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-register": "^6.18.0",
+    "babelrc-rollup": "^3.0.0",
+    "mkdirp": "^0.5.1",
+    "npm-run-all": "^4.0.2",
+    "rimraf": "^2.4.3",
+    "rollup": "^0.37.0",
+    "rollup-plugin-babel": "^2.7.1"
+  }
+}
